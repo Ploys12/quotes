@@ -1,17 +1,12 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import QuoteGenerator from './Components/QuoteGenerator';
-
-const Stack = createStackNavigator();
+import { View } from 'react-native';
+import TaxiApp from './Components/TaxiApp';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="QuoteGenerator" component={QuoteGenerator} options={{ title: 'Цитатный генератор' }} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View style={{ flex: 1 }}>
+      <TaxiApp />
+    </View>
   );
 };
 
